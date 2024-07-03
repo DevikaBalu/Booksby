@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Booksby</title>
+</head>
+<body bgcolor="beige">
+    <div class="nav">
+        <h1>BOOKSBY</h1> <p>One Stop For Bloggers</p>
+    </div>
+    
+    <div class="container">
+        <div class="box-container">
+            <h2>Rich Dad Poor Dad</h2>
+            <h4>Robert</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore vero, architecto ipsum labore neque commodi, itaque ad dolore ullam maxime quia? Perferendis quasi aliquam earum recusandae. Dolores, maiores, pariatur quaerat odit expedita architecto voluptatem eum vitae commodi nemo iusto sint.</p>
+            <button id="del" onclick="delet(event)">Delete</button>
+        </div>
+    </div>
+
+    <div class="plus">
+        <button class="plusbtn" id="plusbtn">+</button>
+    </div>
+
+    <div class="overlay"> </div>
+    <div class="popup">
+        <h2>ADD BOOK</h2>
+        <form >
+         <input type="text" placeholder="Title" id="title">
+         <input type="text" placeholder="Author" id="author">
+        <textarea  placeholder="Description" id="desc"></textarea>
+        <br />
+        <button id="add"  onclick="addbtn(event)">Add</button>
+        <button id="cancel" onclick="can(event)">Cancel</button>
+       </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
